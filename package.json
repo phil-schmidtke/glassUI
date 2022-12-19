@@ -1,5 +1,5 @@
 {
-  "name": "glass-ui",
+  "name": "tailwind-glass",
   "version": "0.0.1",
   "description": "TailwindCss Component Libary in a glassy look",
   "main": "index.js",
