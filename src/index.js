@@ -2,12 +2,6 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = plugin(function ({ addComponents, theme }) {
-    
-    /*
-    TODO: Reusable Glass Look with diffrent Tones
-    TODO: Sidebar
-    */
-
 
     /*
         * * Buttons 
@@ -38,7 +32,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 transition: 'all 0.15s ease-in-out',
             },
         },
-        '.btn-sm': {
+        '.btn-md': {
             fontSize: theme('fontSize.sm'),
             width: 'fit-content',
             paddingTop: theme('spacing.1'),
@@ -49,7 +43,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
             backdropFilter: 'blur( 1.5px )',
             webkitBackdropFilter: 'blur( 1.5px )',
-            borderRadius: '10px',
+            borderRadius: '8px',
             border: '2px solid rgba( 255, 255, 255, 0.10 )',
             color: theme('colors.white'),
             cursor: 'pointer',
@@ -58,7 +52,32 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 boxShadow: '0 8px 32px 0 rgba(35, 33, 81, 0.35)',
                 backdropFilter: 'blur( 1.5px )',
                 webkitBackdropFilter: 'blur( 1.5px )',
-                borderRadius: '10px',
+                borderRadius: '8px',
+                border: '2px solid rgba( 255, 255, 255, 0.20 )',
+                transition: 'all 0.15s ease-in-out',
+            },
+        },
+        '.btn-sm': {
+            fontSize: theme('fontSize.xs'),
+            width: 'fit-content',
+            paddingTop: theme('spacing.0.5'),
+            paddingBottom: theme('spacing.0.5'),
+            paddingLeft: theme('spacing.1'),
+            paddingRight: theme('spacing.1'),
+            background: 'rgba( 255, 255, 255, 0.05 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '5px',
+            border: '2px solid rgba( 255, 255, 255, 0.10 )',
+            color: theme('colors.white'),
+            cursor: 'pointer',
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                boxShadow: '0 8px 32px 0 rgba(35, 33, 81, 0.35)',
+                backdropFilter: 'blur( 1.5px )',
+                webkitBackdropFilter: 'blur( 1.5px )',
+                borderRadius: '5px',
                 border: '2px solid rgba( 255, 255, 255, 0.20 )',
                 transition: 'all 0.15s ease-in-out',
             },
@@ -87,8 +106,9 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 transition: 'all 0.15s ease-in-out',
             },
         },
-        '.btn-outline-sm': {
+        '.btn-outline-md': {
             width: 'fit-content',
+            fontSize: theme('fontSize.sm'),
             paddingTop: theme('spacing.1'),
             paddingBottom: theme('spacing.1'),
             paddingLeft: theme('spacing.2'),
@@ -97,7 +117,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
             backdropFilter: 'blur( 1.5px )',
             webkitBackdropFilter: 'blur( 1.5px )',
-            borderRadius: '10px',
+            borderRadius: '8px',
             border: '2px solid rgba( 255, 255, 255, 0.30 )',
             color: theme('colors.white'),
             cursor: 'pointer',
@@ -106,7 +126,32 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 boxShadow: '0 8px 32px 0 rgba(35, 33, 81, 0.35)',
                 backdropFilter: 'blur( 1.5px )',
                 webkitBackdropFilter: 'blur( 1.5px )',
-                borderRadius: '10px',
+                borderRadius: '8px',
+                border: '2px solid rgba( 255, 255, 255, 0.20 )',
+                transition: 'all 0.15s ease-in-out',
+            },
+        },
+        '.btn-outline-sm': {
+            width: 'fit-content',
+            fontSize: theme('fontSize.xs'),
+            paddingTop: theme('spacing.0.5'),
+            paddingBottom: theme('spacing.0.5'),
+            paddingLeft: theme('spacing.1'),
+            paddingRight: theme('spacing.1'),
+            background: 'transparent',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '8px',
+            border: '2px solid rgba( 255, 255, 255, 0.30 )',
+            color: theme('colors.white'),
+            cursor: 'pointer',
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                boxShadow: '0 8px 32px 0 rgba(35, 33, 81, 0.35)',
+                backdropFilter: 'blur( 1.5px )',
+                webkitBackdropFilter: 'blur( 1.5px )',
+                borderRadius: '8px',
                 border: '2px solid rgba( 255, 255, 255, 0.20 )',
                 transition: 'all 0.15s ease-in-out',
             },
@@ -119,6 +164,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
     */
     const cards = {
         '.card': {
+            width: '100%',
             padding: theme('spacing.4'),
             background: 'rgba( 255, 255, 255, 0.25 )',
             boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
@@ -127,7 +173,36 @@ module.exports = plugin(function ({ addComponents, theme }) {
             borderRadius: '10px',
             border: '2px solid rgba( 255, 255, 255, 0.20 )',
         },
+        '.card-light': {
+            width: '100%',
+            padding: theme('spacing.4'),
+            background: 'rgba( 255, 255, 255, 0.10 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.10 )',
+        },
+        '.card-outline': {
+            width: '100%',
+            padding: theme('spacing.4'),
+            background: 'transparent',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            },
+        },
     }
+
+    /*
+        * * Input Fields
+        TODO: everthing
+    */
 
     addComponents(buttons)
     addComponents(cards)
