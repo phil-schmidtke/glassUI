@@ -246,11 +246,17 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.nav-link-underline-active': {
             marginLeft: theme('spacing.2'),
             marginRight: theme('spacing.2'),
-            color: theme('colors.white'),
             cursor: 'pointer',
             userSelect: 'none',
             webkitUserSelect: 'none',
-            borderBottom: '2px solid white',
+            color: theme('colors.white'),
+            '&:after': {
+                display: 'block',
+                content: '""',
+                borderBottom: '2px solid white',
+                transform: 'scaleX(1)',
+                transition: 'transform 0.15s ease-in-out',
+            },
         },
    }
 
