@@ -379,8 +379,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
             position: 'relative',
             backgroundColor: theme('colors.gray.700'),
             width: '100%',
-            marginTop: '12px',
-            paddingBottom: '6px',
+            paddingBottom: '12px',
             paddingTop: '4px',
             FontFace: 'Roboto Mono',
         }
