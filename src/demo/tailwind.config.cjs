@@ -5,5 +5,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('ui')],
+  plugins: [require('tailwind-glass')],
 }
