@@ -208,6 +208,18 @@ module.exports = plugin(function ({ addComponents, theme }) {
             borderRadiusBottom: '10px',
             borderBottom: '2px solid rgba( 255, 255, 255, 0.20 )',
         },
+        '.nav-link': {
+            marginLeft: theme('spacing.2'),
+            marginRight: theme('spacing.2'),
+            color: theme('colors.gray.200'),
+            cursor: 'pointer',
+            userSelect: 'none',
+            webkitUserSelect: 'none',
+            '&:hover': {
+                color: theme('colors.white'),
+                transition: 'all 0.15s ease-in-out',
+            },
+        }
    }
 
     /*
