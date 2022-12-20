@@ -11,7 +11,7 @@ let config = {
   life: [1.5, 10],
   v: [0.01, 0.03],
   tha: [-10, 10],
-  alpha: [0.4, 0],
+  alpha: [0.6, 0],
   scale: [.1, 0.9],
   position: "all",
   color: ["random", "#FFFFFF"],
