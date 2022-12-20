@@ -211,7 +211,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
         '.nav-link': {
             marginLeft: theme('spacing.2'),
             marginRight: theme('spacing.2'),
-            color: theme('colors.gray.200'),
+            color: theme('colors.gray.300'),
             cursor: 'pointer',
             userSelect: 'none',
             webkitUserSelect: 'none',
@@ -219,7 +219,39 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 color: theme('colors.white'),
                 transition: 'all 0.15s ease-in-out',
             },
-        }
+        },
+        '.nav-link-underline': {
+            marginLeft: theme('spacing.2'),
+            marginRight: theme('spacing.2'),
+            color: theme('colors.gray.300'),
+            cursor: 'pointer',
+            userSelect: 'none',
+            webkitUserSelect: 'none',
+            display: 'inline-block',
+            '&:hover': {
+                color: theme('colors.white'),
+                transition: 'all 0.15s ease-in-out',
+            },
+            '&:after': {
+                display: 'block',
+                content: '""',
+                borderBottom: '2px solid white',
+                transform: 'scaleX(0)',
+                transition: 'transform 0.15s ease-in-out',
+            },
+            '&:hover:after': {
+                transform: 'scaleX(1)',
+            },
+        },
+        '.nav-link-underline-active': {
+            marginLeft: theme('spacing.2'),
+            marginRight: theme('spacing.2'),
+            color: theme('colors.white'),
+            cursor: 'pointer',
+            userSelect: 'none',
+            webkitUserSelect: 'none',
+            borderBottom: '2px solid white',
+        },
    }
 
     /*
