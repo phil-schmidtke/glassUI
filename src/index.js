@@ -351,9 +351,45 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
     }
 
+    const code = {
+        '.code': {
+            position: 'relative',
+            overflow: 'hidden',
+            overflowX: 'auto',
+            minWidth: '18rem',
+            twBgOpacity: 1,
+            backgroundColor: theme('colors.gray.800'),
+            paddingTop: '0.5rem',
+            paddingBottom: '1rem',
+            twTextOpacity: 1,
+            color: 'white',
+            borderRadius: '10px',
+        },
+        '.code-dot': {
+            position: 'relative',
+            padding: '4px',
+            marginLeft: '8px',
+            marginTop: '4px',
+            width: '10px',
+            height: '10px',
+            borderRadius: '50%',
+            backgroundColor: theme('colors.gray.600'),
+        },
+        '.code-line': {
+            position: 'relative',
+            backgroundColor: theme('colors.gray.700'),
+            width: '100%',
+            marginTop: '12px',
+            paddingBottom: '6px',
+            paddingTop: '4px',
+            FontFace: 'Roboto Mono',
+        }
+    }
+
     addComponents(buttons)
     addComponents(cards)
     addComponents(inputs)
     addComponents(header)
+    addComponents(code)
     }
 )
