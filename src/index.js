@@ -200,7 +200,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
    const header = {
         '.header': {
             width: '100%',
-            padding: theme('spacing.4'),
+            padding: theme('spacing.2'),
             background: 'rgba( 255, 255, 255, 0.15 )',
             boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
             backdropFilter: 'blur( 1.5px )',
@@ -209,7 +209,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
             borderBottom: '2px solid rgba( 255, 255, 255, 0.20 )',
         },
    }
-    
 
     /*
         * * Input Fields
