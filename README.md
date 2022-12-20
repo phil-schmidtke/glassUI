@@ -2,6 +2,8 @@
 
 This is a component library for tailwindcss. It is a work in progress and is not ready for production use. If you find any bugs or have any suggestions please open an issue.
 
+You can already find this Package on [NPM:](https://www.npmjs.com/package/tailwind-glass)
+
 ## Installation
 
 To use this Component Libary, you have to install tailwindcss first. You can find the installation instructions [here](https://tailwindcss.com/docs/installation).
