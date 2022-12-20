@@ -2,14 +2,7 @@
 function App() {
 
   return (
-    <div>
-      <div className="header">
-        test
-      </div>
-      <div className="mt-4"> 
-        <h1 className="text-center font-bold sm:text-2xl lg:text-4xl mt-4">GlassUI</h1>
-        <h1 className="text-center font-bold sm:text-xl lg:text-2xl mt-4">A TailwindCss Component Libary</h1>
-      </div>
+    <div className="m-4">
       <div className="my-4">
 
         <div className="flex">
