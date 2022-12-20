@@ -75,11 +75,19 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="mt-2">
-        <h1 className="text-lg">Header Links</h1>
+      <h1 className="text-lg">Header Links</h1>
+      <div className="mt-2 flex justify-between w-1/2">
         <div className="mt-2">
-          <h2>Standart</h2>
-          <a className="nav-link">Link</a>
+          <h2>Standard</h2>
+          <a className="nav-link text-xl">Link</a>
+        </div>
+        <div className="mt-2">
+          <h2>Underline</h2>
+          <a className="nav-link-underline text-xl">Link</a>
+        </div>
+        <div className="mt-2">
+          <h2>Underline Active</h2>
+          <a className="nav-link-underline-active text-xl">Link</a>
         </div>
       </div>
     </div>
