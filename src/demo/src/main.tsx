@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-// @ts-ignore
+//@ts-ignore
 import ParticleBackground from 'react-particle-backgrounds'
 import './index.css'
 
