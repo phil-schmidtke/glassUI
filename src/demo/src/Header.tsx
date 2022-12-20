@@ -9,13 +9,13 @@ export default function Header() {
                     </h1>
                 </div>
                 <div className="mt-2">
-                    <a className="mx-4 text-gray-200 hover:text-white transition-all ease-in-out cursor-pointer hover:scale-105">
+                    <a className="nav-link">
                         Components
                     </a>
-                    <a className="mx-4 text-gray-200 hover:text-white transition-all ease-in-out cursor-pointer hover:scale-105">
+                    <a className="nav-link">
                         Docs
                     </a>
-                    <a className="mx-4 text-gray-200 hover:text-white transition-all ease-in-out cursor-pointer hover:scale-105">
+                    <a className="nav-link">
                         About
                     </a>
                 </div>
