@@ -1,8 +1,8 @@
 export default function Cards() {
     return (
-        <div>
+        <div className="mt-4">
             <h2 className="ml-2">Cards</h2>
-            <div className="mt-4 md:flex">
+            <div className="md:flex">
                 <div className="w-full md:mx-2">
                     <div className="card">Card</div>
                 </div>
