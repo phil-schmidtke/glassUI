@@ -194,6 +194,24 @@ module.exports = plugin(function ({ addComponents, theme }) {
     }
 
     /*
+        * * Header / Nav
+        TODO: everthing
+    */
+   const header = {
+        '.header': {
+            width: '100%',
+            padding: theme('spacing.4'),
+            background: 'rgba( 255, 255, 255, 0.15 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadiusBottom: '10px',
+            borderBottom: '2px solid rgba( 255, 255, 255, 0.20 )',
+        },
+   }
+    
+
+    /*
         * * Input Fields
         TODO: everthing
     */
@@ -287,5 +305,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents(buttons)
     addComponents(cards)
     addComponents(inputs)
+    addComponents(header)
     }
 )
