@@ -1,5 +1,6 @@
 import Buttons from "./components/Buttons";
 import Cards from "./components/Cards";
+import Code from "./components/Code";
 import Header from "./components/Header";
 import Inputs from "./components/Inputs";
 
@@ -13,6 +14,7 @@ export default function Components() {
                     <Cards />
                     <Inputs />
                     <Header />
+                    <Code />
                 </div>
             </div>
         </div>
