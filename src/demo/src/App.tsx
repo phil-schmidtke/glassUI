@@ -4,7 +4,6 @@ function App() {
   return (
     <div className="m-4">
       <div className="my-4">
-
         <div className="flex">
           <div>
             <h2 className="text-md sm:text-lg">Button</h2>
