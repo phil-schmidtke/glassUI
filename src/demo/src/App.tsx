@@ -67,6 +67,21 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="my-4">
+        <div>
+          <h1>Header / Navbar</h1>
+          <div className="header">
+            <h1 className="text-center">Header</h1>
+          </div>
+        </div>
+      </div>
+      <div className="mt-2">
+        <h1 className="text-lg">Header Links</h1>
+        <div className="mt-2">
+          <h2>Standart</h2>
+          <a className="nav-link">Link</a>
+        </div>
+      </div>
     </div>
   )
 }
