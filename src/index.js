@@ -203,8 +203,83 @@ module.exports = plugin(function ({ addComponents, theme }) {
         * * Input Fields
         TODO: everthing
     */
+    const inputs = {
+        '.input': {
+            color: 'white',
+            twRingShadow: '0 0 #000 !important',
+            padding: theme('spacing.2'),
+            background: 'rgba( 255, 255, 255, 0.25 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            twRingOffsetShadow: 0,
+            twRingShadow: 0,
+            boxShadow: 0,
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            }
+        },
+        '.input-sm': {
+            color: 'white',
+            twRingShadow: '0 0 #000 !important',
+            padding: theme('spacing.1'),
+            background: 'rgba( 255, 255, 255, 0.25 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            twRingOffsetShadow: 0,
+            twRingShadow: 0,
+            boxShadow: 0,
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            }
+        },
+        '.input-outline': {
+            color: 'white',
+            twRingShadow: '0 0 #000 !important',
+            padding: theme('spacing.2'),
+            background: 'transparent',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            twRingOffsetShadow: 0,
+            twRingShadow: 0,
+            boxShadow: 0,
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            },
+        },
+        '.input-outline-sm': {
+            color: 'white',
+            twRingShadow: '0 0 #000 !important',
+            padding: theme('spacing.1'),
+            background: 'transparent',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            twRingOffsetShadow: 0,
+            twRingShadow: 0,
+            boxShadow: 0,
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            },
+        },
+    }
 
     addComponents(buttons)
     addComponents(cards)
+    addComponents(inputs)
     }
 )
