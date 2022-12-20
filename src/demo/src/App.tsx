@@ -59,6 +59,19 @@ function App() {
           </div>
         </div>
       </div>
+      <div>
+        <h1 className="m-2 mt-4">Inputs</h1>
+        <div className="flex">
+          <div className="block">
+            <input placeholder="Standart Input" className="input block" />
+            <input placeholder="Outline Input" className="input-outline mt-2" />
+          </div>
+          <div className="ml-4">
+            <input placeholder="Standart Input" className="input-sm block" />
+            <input placeholder="Outline Input" className="input-outline-sm mt-2" />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
