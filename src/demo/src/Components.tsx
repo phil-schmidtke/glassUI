@@ -9,7 +9,7 @@ export default function Components() {
         <div className="mx-2 sm:mx-4">
             <h1 className="text-lg font-bold mt-2 sm:mt-4">Components</h1>
             <div className="mt-4">
-                <div>
+                <div className="pb-12">
                     <Buttons />
                     <Cards />
                     <Inputs />
