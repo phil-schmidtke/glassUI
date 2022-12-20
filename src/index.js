@@ -2,7 +2,12 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = plugin(function ({ addComponents, theme }) {
-    const components = {
+    
+    /*
+        * * Buttons 
+        TODO: everthing
+    */
+    const buttons = {
         '.btn': {
             width: 'fit-content',
             paddingTop: theme('spacing.2'),
@@ -79,6 +84,20 @@ module.exports = plugin(function ({ addComponents, theme }) {
             },
         },
     }
-    addComponents(components)
+
+    /*
+        * * CARDS 
+        TODO: everthing
+    */
+    const cards = {
+        '.card': {
+            backgroundColor: theme('colors.white'),
+            borderRadius: theme('borderRadius.xl'),
+            boxShadow: theme('boxShadow.md'),
+            padding: theme('spacing.4'),
+        },
+    }
+
+    addComponents(buttons, cards)
     }
 )
