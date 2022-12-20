@@ -220,6 +220,9 @@ module.exports = plugin(function ({ addComponents, theme }) {
             '&:hover': {
                 background: 'rgba( 255, 255, 255, 0.25 )',
                 transition: 'all 0.20s ease-in-out',
+            },
+            '&::placeholder': {
+                color: theme('colors.gray.300'),
             }
         },
         '.input-sm': {
@@ -238,6 +241,9 @@ module.exports = plugin(function ({ addComponents, theme }) {
             '&:hover': {
                 background: 'rgba( 255, 255, 255, 0.25 )',
                 transition: 'all 0.20s ease-in-out',
+            },
+            '&::placeholder': {
+                color: theme('colors.gray.300'),
             }
         },
         '.input-outline': {
@@ -257,6 +263,9 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 background: 'rgba( 255, 255, 255, 0.25 )',
                 transition: 'all 0.20s ease-in-out',
             },
+            '&::placeholder': {
+                color: theme('colors.gray.300'),
+            }
         },
         '.input-outline-sm': {
             color: 'white',
@@ -275,6 +284,9 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 background: 'rgba( 255, 255, 255, 0.25 )',
                 transition: 'all 0.20s ease-in-out',
             },
+            '&::placeholder': {
+                color: theme('colors.gray.300'),
+            }
         },
     }
 
