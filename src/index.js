@@ -420,11 +420,30 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
     }
 
+    /*
+        * * Overlays
+        TODO: diffrent types
+    */
+   const overlays = {
+        '.overlay': {
+            position: 'fixed',
+            width: '100%',
+            height: '100%',
+            top: 0,
+            left: 0,
+            background: 'rgba( 255, 255, 255, 0.5 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 2.5px )',
+            webkitBackdropFilter: 'blur( 2.5px )',
+        },
+   }
+
     addComponents(buttons)
     addComponents(cards)
     addComponents(inputs)
     addComponents(header)
     addComponents(code)
     addComponents(stats)
+    addComponents(overlays)
 }
 )
