@@ -22,9 +22,11 @@ let config = {
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div className='absolute h-screen'>
-      <ParticlesBg type="custom" bg={false} config={config} />
+    <div>
+      <div className='absolute h-screen'>
+        <ParticlesBg type="custom" bg={false} config={config} />
+      </div>
+      <App />
     </div>
-    <App />
   </React.StrictMode>,
 )
