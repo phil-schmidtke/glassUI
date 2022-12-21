@@ -438,6 +438,22 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
    }
 
+   const mobileMenus = {
+        '.mobile-menu': {
+            position: 'fixed',
+            width: '100%',
+            height: '100%',
+            bottom: 0,
+            left: 0,
+            background: 'rgba( 255, 255, 255, 0.45 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadiusBottom: '10px',
+            borderTop: '2px solid rgba( 255, 255, 255, 0.20 )',
+        },
+   }
+
     addComponents(buttons)
     addComponents(cards)
     addComponents(inputs)
@@ -445,5 +461,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents(code)
     addComponents(stats)
     addComponents(overlays)
+    addComponents(mobileMenus)
 }
 )
