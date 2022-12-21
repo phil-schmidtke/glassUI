@@ -438,6 +438,10 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
    }
 
+   /*
+        * * Mobile Menus
+        TODO: diffrent types
+    */
    const mobileMenus = {
         '.mobile-menu': {
             position: 'fixed',
@@ -454,6 +458,51 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
    }
 
+   /*
+        * * Gradient Backgrounds
+        TODO: more types
+    */
+        const backgrounds = {
+            '.bg-1': {
+                color: 'white',
+                backgroundColor: '#21D4FD',
+                backgroundImage: 'linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)',
+                backgroundSize: '100% 200vh',
+                backgroundRepeat: 'repeat-y',
+                height: '100%',
+            },
+            '.bg-2': {
+                color: 'white',
+                background: '-webkit-linear-gradient(to right, #0b8793, #360033)',
+                background: 'linear-gradient(to right, #0b8793, #360033)',
+                backgroundSize: '100% 200vh',
+                backgroundRepeat: 'repeat-y',
+                height: '100%',
+            },
+            '.bg-3': {
+                color: 'white',
+                backgroundImage: 'radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% )',
+                backgroundSize: '100% 200vh',
+                backgroundRepeat: 'repeat-y',
+                height: '100%',
+            },
+            '.bg-4': {
+                color: 'white',
+                backgroundImage: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% )',
+                backgroundSize: '100% 200vh',
+                backgroundRepeat: 'repeat-y',
+                height: '100%',
+            },
+            '.bg-5': {
+                color: 'white',
+                backgroundImage: 'radial-gradient( circle farthest-corner at 32.7% 82.7%,  rgba(173,0,171,1) 8.3%, rgba(15,51,92,1) 79.4% )',
+                backgroundSize: '100% 200vh',
+                backgroundRepeat: 'repeat-y',
+                height: '100%',
+            },
+    
+        }
+
     addComponents(buttons)
     addComponents(cards)
     addComponents(inputs)
@@ -462,5 +511,6 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents(stats)
     addComponents(overlays)
     addComponents(mobileMenus)
+    addComponents(backgrounds)
 }
 )
