@@ -6,7 +6,7 @@ type HeaderContentProps = {
 
 export default function HeaderContent({active, setActive}: HeaderContentProps) {
     return (
-        <div className="flex justify-between">
+        <div className="flex justify-between h-12">
             <h1 className="text-2xl font-bold mt-1">
                 <span className="opacity-75 hover:opacity-100 transition-all ease-in-out cursor-pointer">Glass</span>
                 <span className="font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">UI</span>

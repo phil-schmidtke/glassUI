@@ -1,7 +1,7 @@
 export default function Docs() {
     return (
         <div className="flex">
-            <aside className="fixed h-screen top-16 border-r-2 w-60 overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-transparent">
+            <aside className="fixed h-screen top-16 border-r-2 w-32 sm:w-60 overflow-y-scroll scrollbar-thin scrollbar-thumb-white scrollbar-track-transparent">
                 <div>
                     <p>test</p>
                     <p>test</p>
