@@ -20,7 +20,6 @@ let config = {
   g: 0.2,
 };
 
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <div className='absolute h-screen'>

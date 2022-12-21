@@ -3,6 +3,7 @@ import Cards from "./components/Cards";
 import Code from "./components/Code";
 import Header from "./components/Header";
 import Inputs from "./components/Inputs";
+import Stats from "./components/Stats";
 
 export default function Components() {
     return (
@@ -15,6 +16,7 @@ export default function Components() {
                     <Inputs />
                     <Header />
                     <Code />
+                    <Stats />
                 </div>
             </div>
         </div>
