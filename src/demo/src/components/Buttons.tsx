@@ -7,7 +7,7 @@ export default function Buttons() {
                 <button className="btn-md mx-1">Medium Button</button>
                 <button className="btn-sm mx-1">Small Button</button>
             </div>
-            <div className="md:ml-2 mt-2 md:mt-0">
+            <div className="md:ml-2 mt-2 md:mt-0 z-50">
                 <h2 className="ml-2 mb-1">Outline Buttons</h2>
                 <button className="btn-outline mx-1">Standart Button</button>
                 <button className="btn-outline-md mx-1">Medium Button</button>
