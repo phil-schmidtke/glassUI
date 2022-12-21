@@ -23,7 +23,7 @@ let config = {
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div className='absolute w-screen h-screen'>
+    <div className='absolute h-screen'>
       <ParticlesBg type="custom" bg={false} config={config} />
     </div>
     <App />

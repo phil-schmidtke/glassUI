@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Components from "./Components"
 import HeaderContent from "./components/HeaderContent"
+import Docs from "./Docs"
 
 function App() {
   const [active, setActive] = useState('home')
@@ -13,7 +14,7 @@ function App() {
       <main>
         {active === 'home' && <div>Home</div>}
         {active === 'components' && <Components />}
-        {active === 'docs' && <div>Docs</div>}
+        {active === 'docs' && <Docs />}
       </main>
     </div>
   )
