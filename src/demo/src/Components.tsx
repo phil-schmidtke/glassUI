@@ -3,6 +3,7 @@ import Cards from "./components/Cards";
 import Code from "./components/Code";
 import Header from "./components/Header";
 import Inputs from "./components/Inputs";
+import Overlays from "./components/Overlays";
 import Stats from "./components/Stats";
 
 export default function Components() {
@@ -17,6 +18,7 @@ export default function Components() {
                     <Header />
                     <Code />
                     <Stats />
+                    <Overlays />
                 </div>
             </div>
         </div>
