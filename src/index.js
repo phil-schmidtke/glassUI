@@ -197,7 +197,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
         * * Header / Nav
         TODO: everthing
     */
-   const header = {
+    const header = {
         '.header': {
             width: '100%',
             padding: theme('spacing.2'),
@@ -258,7 +258,7 @@ module.exports = plugin(function ({ addComponents, theme }) {
                 transition: 'transform 0.15s ease-in-out',
             },
         },
-   }
+    }
 
     /*
         * * Input Fields
@@ -351,6 +351,10 @@ module.exports = plugin(function ({ addComponents, theme }) {
         },
     }
 
+    /*
+        * * Code Previews
+        TODO: Provide Layout with Prefixes
+    */
     const code = {
         '.code': {
             position: 'relative',
@@ -385,6 +389,10 @@ module.exports = plugin(function ({ addComponents, theme }) {
         }
     }
 
+    /*
+        * * Stat Cards
+        TODO: provide layouts - verticaly and stacked for mobile, maybe add something like a divider
+    */
     const stats = {
         '.stat-negative': {
             position: 'relative',
@@ -418,5 +426,5 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents(header)
     addComponents(code)
     addComponents(stats)
-    }
+}
 )
