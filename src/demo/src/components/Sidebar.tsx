@@ -10,12 +10,12 @@ export default function Sidebar({active, setActive}: {active: string, setActive:
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-xl text-center mt-4">Components</h2>
+                    <h2 className="text-lg sm:text-xl text-center mt-4">Components</h2>
                     <div className="ml-4 mt-2">
                         <h3 className="text-lg">Buttons</h3>
                         <div className="block my-1">
-                            <a className="nav-link-underline block">Standart</a>
-                            <a className="nav-link-underline block">Outline</a>
+                            <a onClick={() => setActive('button_standart')} className={`block ${active === 'button_standart' ? "nav-link-underline-active" : "nav-link-underline" }`}>Standart</a>
+                            <a onClick={() => setActive('button_outline')} className="nav-link-underline block">Outline</a>
                         </div>
                     </div>
                     <div className="ml-4 mt-2">
