@@ -385,10 +385,38 @@ module.exports = plugin(function ({ addComponents, theme }) {
         }
     }
 
+    const stats = {
+        '.stat-negative': {
+            position: 'relative',
+            width: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: theme('colors.red.500'),
+            padding: theme('spacing.2'),
+            borderRadius: '8px',
+            border: '2px solid rgba(185, 28, 28, 0.3)',
+            boxShadow: '0 12px 20px 0 rgba(239, 68, 68, 0.5)',
+        },
+        '.stat-positive': {
+            position: 'relative',
+            width: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: theme('colors.green.500'),
+            padding: theme('spacing.2'),
+            borderRadius: '8px',
+            border: '2px solid rgba(22, 163, 74, 0.3)',
+            boxShadow: '0 12px 20px 0 rgba(34, 197, 94, 0.5))',
+        },
+    }
+
     addComponents(buttons)
     addComponents(cards)
     addComponents(inputs)
     addComponents(header)
     addComponents(code)
+    addComponents(stats)
     }
 )
