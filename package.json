@@ -1,6 +1,6 @@
 {
   "name": "tailwind-glass",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "TailwindCss Component Libary in a glassy look",
   "main": "src/index.js",
   "scripts": {
