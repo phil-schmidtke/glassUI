@@ -352,6 +352,98 @@ module.exports = plugin(function ({ addComponents, theme }) {
     }
 
     /*
+        * * Checkboxes
+        TODO: Provide Layout with Prefixes
+    */
+   const checkboxes = {
+        '.checkbox': {
+            display: 'grid',
+            placeContent: 'center',
+            width: '1.5rem',
+            height: '1.5rem',
+            marginRight: '0.5rem',
+            marginBottom: '0.5rem',
+            borderRadius: '5px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            twBgOpacity: 1,
+            backgroundColor: 'transparent',
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            },
+            '&:checked': {
+                background: 'black',
+                transition: 'all 0.20s ease-in-out',
+            },
+            '&:before': {
+                content: "",
+                width: '0.65em',
+                height: '0.65em',
+                transform: 'scale(0)',
+                transition: '120ms transform ease-in-out',
+                boxShadow: 'inset 1em 1em var(--form-control-color)',
+            },
+            '&:checked:before': {
+                transform: 'scale(1)',
+            },
+        },
+   }
+
+   /*
+        * * Selects
+        TODO
+    */
+    const selects = {
+        '.select': {
+            color: 'white',
+            paddingTop: theme('spacing.2'),
+            paddingLeft: theme('spacing.3'),
+            paddingRight: theme('spacing.10'),
+            textAlign: 'left',
+            twRingShadow: '0 0 #000 !important',
+            padding: theme('spacing.2'),
+            background: 'rgba( 255, 255, 255, 0.25 )',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            twRingOffsetShadow: 0,
+            twRingShadow: 0,
+            boxShadow: 0,
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            },
+            '&::placeholder': {
+                color: theme('colors.gray.300'),
+            }
+        },
+        '.select-option': {
+            color: theme('colors.gray.300'),
+            twRingShadow: '0 0 #000 !important',
+            padding: theme('spacing.2'),
+            backgroundColor: 'transparent',
+            boxShadow: '0 12px 32px 0 rgba(35, 33, 81, 0.25)',
+            backdropFilter: 'blur( 1.5px )',
+            webkitBackdropFilter: 'blur( 1.5px )',
+            borderRadius: '10px',
+            border: '2px solid rgba( 255, 255, 255, 0.20 )',
+            twRingOffsetShadow: 0,
+            twRingShadow: 0,
+            boxShadow: 0,
+            '&:hover': {
+                background: 'rgba( 255, 255, 255, 0.25 )',
+                transition: 'all 0.20s ease-in-out',
+            },
+            '&::placeholder': {
+                color: theme('colors.gray.300'),
+            }
+        }
+    }
+
+
+    /*
         * * Code Previews
         TODO: Provide Layout with Prefixes
     */
@@ -506,11 +598,13 @@ module.exports = plugin(function ({ addComponents, theme }) {
     addComponents(buttons)
     addComponents(cards)
     addComponents(inputs)
+    addComponents(checkboxes)
     addComponents(header)
     addComponents(code)
     addComponents(stats)
     addComponents(overlays)
     addComponents(mobileMenus)
     addComponents(backgrounds)
+    addComponents(selects)
 }
 )
