@@ -1,6 +1,6 @@
 {
   "name": "tailwind-glass",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TailwindCss Component Libary in a glassy look",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/phil-schmidtke/glassUI.git"
   },
-  "author": "phil.schmidtke",
+  "author": "phil-schmidtke",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/phil-schmidtke/glassUI/issues"
